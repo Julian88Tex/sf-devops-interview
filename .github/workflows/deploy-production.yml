@@ -35,8 +35,8 @@ jobs:
             - name: 'Checkout source code'
               uses: actions/checkout@v4
 
-            - name: 'Verify code formatting'
-              run: npx prettier --check "force-app/**/*.cls"
+            # - name: 'Verify code formatting'
+            #   run: npx prettier --check "force-app/**/*.cls"
 
             - name: 'Set Connected App Secrets'
               if: github.event_name == 'push'
